@@ -7,6 +7,11 @@
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
     <title>EGames</title>
 
     <link rel="stylesheet" href="./assets/styles/style.css">
@@ -14,14 +19,68 @@
 
 <body>
     <header>
-        <nav></nav>
-        <div>
-            <h1></h1>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">E-Games</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
+    <main class="container-fluid">
+        <div class="container">
+            <section id="about">
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="https://th.bing.com/th/id/OIP.ptvpMV-owzWbbfRKs7wWTgHaIl?rs=1&pid=ImgDetMain"
+                                alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://th.bing.com/th/id/OIP.ptvpMV-owzWbbfRKs7wWTgHaIl?rs=1&pid=ImgDetMain"
+                                alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="https://th.bing.com/th/id/OIP.ptvpMV-owzWbbfRKs7wWTgHaIl?rs=1&pid=ImgDetMain"
+                                alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
     <script src="./assets/scipts/index.js"></script>
 </body>
 
